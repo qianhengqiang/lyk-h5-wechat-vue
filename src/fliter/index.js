@@ -6,3 +6,7 @@ Vue.filter('imgSrc',(path)=>{
     let result = path ? imgBaseUrl + path : defaultImgSrc
     return result
 })
+
+Vue.filter('paseInt',(num)=>{
+    return parseInt(num)
+})

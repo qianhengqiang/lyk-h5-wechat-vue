@@ -127,6 +127,8 @@
   .bottom{
     width:px2rem(347*2);
     margin:px2rem(40) auto 0;
+    display: flex;
+    flex-direction: column;
     .title {
       p{
         display: flex;

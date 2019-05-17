@@ -1,13 +1,16 @@
 <template>
     <div>
-
+        <house-column v-for="item in list" :item="item"></house-column>
     </div>
 </template>
 
 <script>
-    import houseColumn from '@/components/';
+    import houseColumn from '@/components/ListColumn/HouseColumn';
     export default {
         name: "House",
+        components:{
+            houseColumn
+        },
         data(){
           return {
               list: []
@@ -23,8 +26,6 @@
 
 <style scoped lang="scss">
     div{
-        width: px2rem(200);
-        height: px2rem(200);
-        background:red;
+        width:100%;
     }
 </style>
